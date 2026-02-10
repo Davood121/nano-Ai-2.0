@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+websockets
+python-multipart
+langchain-community
+langchain-ollama
+sentence-transformers
+chromadb
+numpy
+torch
+edge-tts
+duckduckgo-search
+beautifulsoup4
+requests
