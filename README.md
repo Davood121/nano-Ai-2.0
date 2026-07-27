@@ -1,8 +1,19 @@
 # NanoAI 2.0 - Emotion-Aware AI System
 
+> Nano AI 2.0 - Compact artificial intelligence system with Python backend and web interface.
+
 A fully local, zero-cost, self-evolving, emotion-aware AI system with a futuristic glassmorphism interface.
 
-## 🚀 Quick Start
+## Features
+
+- **Emotion Detection** — Analyzes user sentiment in real-time and adapts responses accordingly
+- **Local LLM** — Powered by Ollama, runs entirely offline with no API costs
+- **Futuristic UI** — Glassmorphism design with neon accents and smooth GSAP animations
+- **Real-Time Chat** — WebSocket-based instant communication with the AI brain
+- **Privacy First** — Everything runs locally on your machine — zero data leaves your system
+- **Zero Cost** — No paid APIs or cloud services required
+
+## Quick Start
 
 ### Prerequisites
 - Python 3.10+
@@ -11,68 +22,68 @@ A fully local, zero-cost, self-evolving, emotion-aware AI system with a futurist
 
 ### Installation
 
-1. **Install Python dependencies:**
-```powershell
+```bash
+# Install Python dependencies
 pip install -r requirements.txt
-```
 
-2. **Ensure Ollama is running with a model:**
-```powershell
-ollama serve
-# In another terminal:
+# Ensure Ollama is running with a model
 ollama pull llama3
 ```
 
 ### Running the System
 
-1. **Start the Backend (AI Brain):**
-```powershell
+**Start the Backend (AI Brain):**
+```bash
 cd backend
 python main.py
 ```
-The server will start on `http://localhost:8000`
+Server starts on `http://localhost:8000`
 
-2. **Open the Frontend (UI):**
-- Simply open `frontend/index.html` in your web browser
-- Or run: `start frontend\index.html`
+**Open the Frontend (UI):**
+- Open `frontend/index.html` in your browser
 
-## 🧠 Architecture
+## Architecture
 
 ### Backend (`backend/`)
-- **`main.py`**: FastAPI WebSocket server
-- **`core/emotion_engine.py`**: Emotion detection and psychological state tracking
-- **`core/planner.py`**: LLM-powered cognitive planning and response generation
-- **`core/memory.py`**: Conversation history and context management
+| Module | Purpose |
+|--------|---------|
+| `main.py` | FastAPI WebSocket server |
+| `core/emotion_engine.py` | Emotion detection and psychological state tracking |
+| `core/planner.py` | LLM-powered cognitive planning and response generation |
+| `core/memory.py` | Conversation history and context management |
 
 ### Frontend (`frontend/`)
-- **`index.html`**: Glassmorphism UI structure
-- **`style.css`**: Dark futuristic theme with neon accents
-- **`script.js`**: WebSocket client with GSAP animations
+| File | Purpose |
+|------|---------|
+| `index.html` | Glassmorphism UI structure |
+| `style.css` | Dark futuristic theme with neon accents |
+| `script.js` | WebSocket client with GSAP animations |
 
-## ✨ Features
+## UI Features
 
-- 🎭 **Emotion Detection**: Analyzes user sentiment and adapts responses
-- 🧠 **Local LLM**: Powered by Ollama (fully offline)
-- 🎨 **Futuristic UI**: Glassmorphism design with smooth animations
-- 💬 **Real-time Chat**: WebSocket-based instant communication
-- 🔒 **Privacy First**: Everything runs locally on your machine
-- 💰 **Zero Cost**: No paid APIs or cloud services
+- Emotion-reactive color system that changes with user sentiment
+- Smooth GSAP animations for polished interactions
+- Breathing "thinking" indicator during AI processing
+- Adaptive mood display panel
+- Glassmorphism panels with backdrop blur effects
 
-## 🎨 UI Features
-
-- Emotion-reactive color system
-- Smooth GSAP animations
-- Breathing "thinking" indicator
-- Adaptive mood display
-- Glassmorphism panels with backdrop blur
-
-## 🔧 Configuration
+## Configuration
 
 Edit `backend/core/planner.py` to change the LLM model:
 ```python
 self.llm = OllamaLLM(model="llama3")  # Change to your preferred model
 ```
 
-## 📝 License
+## Tech Stack
 
-Open source - feel free to modify and extend!
+- **Backend:** Python, FastAPI, Ollama
+- **Frontend:** HTML5, CSS3, JavaScript, GSAP
+- **Communication:** WebSockets
+
+## License
+
+Open source — feel free to modify and extend.
+
+## Links
+
+- [GitHub Repository](https://github.com/Davood121/nano-Ai-2.0)
