@@ -1,5 +1,7 @@
 # NanoAI 2.0 - Emotion-Aware AI System
 
+> **Project status:** Experimental prototype. Feature completeness and test coverage vary; see the setup instructions and verify behavior in your environment.
+
 > Nano AI 2.0 - Compact artificial intelligence system with Python backend and web interface.
 
 A fully local, zero-cost, self-evolving, emotion-aware AI system with a futuristic glassmorphism interface.
